@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7fb;
+    color: #333;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #1f3a93;
+    color: #fff;
+}
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.nav a {
+    margin-right: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav a.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: #4cd137;
+    color: #0c111b;
+}
+.nav-user {
+    margin-right: 12px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+.card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 16px;
+}
+.card h2 {
+    margin-top: 0;
+}
+form .field {
+    margin-bottom: 12px;
+}
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button, .btn-primary {
+    background: #1f3a93;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.secondary {
+    background: #888;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.alert {
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.alert-success { background: #e6ffed; color: #1f7a39; }
+.alert-danger { background: #ffe6e6; color: #a31212; }
+.alert-warning { background: #fff8e1; color: #7a5e00; }
+.pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #f0f0f0;
+    font-size: 12px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+.equipment-card {
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.footer {
+    text-align: center;
+    padding: 16px;
+    color: #666;
+}
+@media (max-width: 640px) {
+    .nav a { display: inline-block; margin: 6px 6px 6px 0; }
+    .nav-user { display: block; margin: 6px 0; }
+}
+
